@@ -26,12 +26,12 @@ h2 {
     cursor: pointer;
 }
 
-h3 {
+h3, .h3Title {
     font-weight: bold;
     font-size: calc(1em + 0.20vw) !important;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -55,7 +55,7 @@ span {
 .navbar .navbar-nav a {
     margin: 0 10px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     color: var(--color-secondary) !important;
     transition: all 300ms;
@@ -261,15 +261,17 @@ main section {
 
     .skill-container ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
         padding: 0px !important;
     }
 
     .skill-container img {
-        width: 120px !important;
-        height: 120px !important;
+        width: calc(2em + 3vw) !important;
+        height: calc(2em + 3vw) !important;
     }
+
 }
 
 /* ACTIVAR ANIMACIONES */
@@ -310,11 +312,12 @@ main section {
     }
 
     .navbar .navbar-nav a {
-        margin: 0px;
+        margin: 1px;
     }
 
     h2:hover {
         transform: scale(1.2);
         font-weight: bold;
     }
+
 }
