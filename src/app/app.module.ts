@@ -8,6 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { SocialComponent } from './components/social/social.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SocialComponent } from './components/social/social.component';
     MenuComponent,
     BannerComponent,
     LogoComponent,
-    SocialComponent
+    SocialComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
