@@ -61,6 +61,10 @@ span {
     transition: all 300ms;
 }
 
+.navbar .navbar-nav a {
+    cursor: pointer;
+}
+
 /* BANNER */
 #banner {
     height: 400px;
@@ -114,21 +118,26 @@ main section {
     padding: 20px 40px !important;
 }
 
-.about-container img {
+.about-container div {
+    position: relative;
     width: 100%;
     max-width: 200px;
 }
 
 .about-container p {
-    margin-top: 20px;
+    position: relative;
     margin-bottom: 0 !important;
+    /* margin-top: 30px; */
     text-align: justify;
 }
 
 /* EXPERIENCIA */
-#experience p {
+#experience {
     padding: 20px 40px;
-    margin-bottom: 0 !important;
+}
+
+#experience p {
+    position: relative;
     text-align: justify;
 }
 
@@ -231,10 +240,61 @@ main section {
     margin: 0px;
 }
 
-/* #footer .social-item {
-    display: inline-block;
-    padding: 5px 2px;
-} */
+/* MODAL LOGIN */
+.loginImg {
+    margin: auto;
+    padding: 10px;
+}
+
+.loginImg img {
+    width: 150px;
+}
+
+.modal-content form {
+    margin: auto;
+}
+
+.modal-content input[type="text"], 
+.modal-content input[type="password"] {
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid rgb(199, 198, 198);
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.modal-content input[type="text"]:focus, 
+.modal-content input[type="password"]:focus {
+    outline: 1px solid var(--color-primary);
+}
+
+.btn-access {
+    display: block !important;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 50px !important;
+}
+
+/* LAPIZ EDITAR */
+.pen,
+.close,
+.pen-perfil
+ {
+    width: 18px;
+    position: absolute;
+    top: -25px;
+    right: 30px;
+}
+
+.close {
+    right: 0;
+}
+
+.pen-perfil {
+    right: 0;
+}
 
 /* MEDIA QUERY */
 @media (max-width: 575px) {
@@ -244,9 +304,9 @@ main section {
 
     .accordion,
     #about .about-container,
-    #experience p,
+    #experience,
     #projects {
-        padding: 20px 10px !important;
+        padding: 20px 20px !important;
     }
 
     #skill .skill-container {
@@ -270,6 +330,15 @@ main section {
     .skill-container img {
         width: calc(2em + 3vw) !important;
         height: calc(2em + 3vw) !important;
+    }
+
+}
+
+@media (max-width: 767px) {
+    
+    .about-container p,
+    #experience p  {
+        margin-top: 20px;
     }
 
 }
