@@ -47,9 +47,9 @@
                 <img src="../../../assets/person-circle.svg" alt="">
             </div>
             <form action="">
-                <input type="text" placeholder="Nombre de usuario">
-                <input type="password" placeholder="Contraseña">
-                <button type="button" class="btn btn-success btn-access">Iniciar sesion</button>
+                <input type="text" placeholder="Nombre de usuario" #name>
+                <input type="password" placeholder="Contraseña" #password>
+                <button type="button" class="btn btn-success btn-access" (click)="checkUser(name.value, password.value)">Iniciar sesion</button>
             </form>
         </div>
     </div>
