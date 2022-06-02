@@ -8,25 +8,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Inicio</a>
+                    <a class="nav-link" routerLink="/home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre mi</a>
+                    <a class="nav-link" href="../home#about">Sobre mi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experiencia</a>
+                    <a class="nav-link" href="../home#experience">Experiencia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#school">Educación</a>
+                    <a class="nav-link" href="../home#school">Educación</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skill">Skills</a>
+                    <a class="nav-link" href="../home#skill">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Proyectos</a>
+                    <a class="nav-link" href="../home#projects">Proyectos</a>
                 </li>
-                <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <a class="nav-link">Iniciar sesion</a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login">Iniciar sesion</a>
                 </li>
                 <div>
                     <app-social></app-social>
@@ -35,22 +35,3 @@
         </div>
     </div>
 </nav>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="loginImg">
-                <img src="../../../assets/person-circle.svg" alt="">
-            </div>
-            <form action="">
-                <input type="text" placeholder="Nombre de usuario" #name>
-                <input type="password" placeholder="Contraseña" #password>
-                <button type="button" class="btn btn-success btn-access" (click)="checkUser(name.value, password.value)">Iniciar sesion</button>
-            </form>
-        </div>
-    </div>
-</div>
