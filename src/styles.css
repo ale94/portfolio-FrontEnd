@@ -51,6 +51,24 @@ span {
     transition: all 300ms;
 }
 
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-brand .logo,
+.navbar-brand .logo2 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    color: var(--color-secondary);
+}
+
+.navbar-brand .logo2 {
+    margin-top: 25px;
+}
+
 /* MENU */
 .navbar .navbar-nav a {
     margin: 0 10px;
